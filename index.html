@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="playText">Let's Play</h1>
+    <br>
+    <h2>Score:</h2>
+    <div class="scoreBox"><span>O Player:</span> <span class="oScore"></span></div>
+      
+    <div class="scoreBox"><span>X Player:</span> <span class="xScore"></span></div>
+    <br>
+
+    <span> Play Versus:</span>
+    <select data-select>
+      <option value="friend" selected>Friend</option>
+      <option value="easy">Easy Computer</option>
+      <option value="hard">Hard Computer</option>
+    </select>
+    <button id="startBtn">Start Game</button>
+    <button id="restartBtn">Restart</button>
+    <div id="gameboard">
+      <div class="box" id="0"></div>
+      <div class="box" id="1"></div>
+      <div class="box" id="2"></div>
+      <div class="box" id="3"></div>
+      <div class="box" id="4"></div>
+      <div class="box" id="5"></div>
+      <div class="box" id="6"></div>
+      <div class="box" id="7"></div>
+      <div class="box" id="8"></div>
+    </div>
+<br>
+    <button id="undoBtn">undo</button>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
